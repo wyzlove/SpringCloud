@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: order
+  datasource:
+    url: jdbc:mysql://localhost:3306/ordersystem?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: root
+
+server:
+  port: 8050
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+mybatis:
+  mapper-locations: classpath:Map/*.xml
+  type-aliases-package: com.wyzlove.entity
+
