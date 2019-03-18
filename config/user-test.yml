@@ -4,7 +4,7 @@ server:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://locahost:3306/ordersystem?useUnicode=true&characterEncoding=UTF-8&useSSL=true
     password: root
-    name: root
+    username: root
 
 mybatis:
   type-aliases-package: com.wyzlove.entity
