@@ -2,7 +2,7 @@ server:
   port: 8002
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jsbc:mysql://locahost:3306/ordersystem?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    url: jdbc:mysql://locahost:3306/ordersystem?useUnicode=true&characterEncoding=UTF-8&useSSL=true
     password: root
     name: root
 
