@@ -1,10 +1,5 @@
 server:
   port: 8002
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://locahost:3306/ordersystem?useUnicode=true&characterEncoding=UTF-8&useSSL=true
-    password: root
-    username: root
 
 mybatis:
   type-aliases-package: com.wyzlove.entity
@@ -12,7 +7,12 @@ mybatis:
 
 spring:
   application:
-    name: user    #springapplication和注册中心和originconfig保持一致
+    name: user    # springapplication和注册中心和originconfig保持一致
+    datasource:  # 注意是spring.application.datasource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://locahost:3306/ordersystem?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+      password: root
+      username: root
 
 eureka:
   client:
