@@ -5,7 +5,7 @@ spring:
     prefix: classpath:/static/
     suffix: .html
 server:
-  port: 8002
+  port: 8060
 eureka:
   client:
     service-url:
