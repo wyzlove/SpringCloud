@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: clientfeign
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+server:
+  port: 8002
+eureka:
+  client:
+    service-url: http://localhost:8761
+  instance:
+    prefer-ip-address: true
